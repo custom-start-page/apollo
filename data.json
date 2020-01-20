@@ -1,4 +1,5 @@
 {
+  "backgroundImage": "/static_assets/apollo.jpg",
   "links": [
     { "name": "YouTube", "url": "https://www.youtube.com" },
     { "name": "Netflix", "url": "https://www.netflix.com/browse" },
