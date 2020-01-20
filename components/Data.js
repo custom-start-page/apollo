@@ -1,7 +1,7 @@
 
 export default class Data {
     async get() {
-        return await fetch('/data.json')
+        return await fetch('static_assets/data.json')
             .then(res => res.json())
             .then(out => {
                 return out;
