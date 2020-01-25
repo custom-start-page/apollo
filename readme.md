@@ -4,13 +4,15 @@ A startpage with a 3D twist. See your links on the moon!
 
 ![.gif showing the apollo startpage](github/moon.gif)
 
+This startpage is available at https://customstart.page.
+
 ## Features
 
 - customisable links
 - customisable background
 - 3D!
 
-## Using
+## Technology
 
 - [React 360](https://facebook.github.io/react-360/)
 - Apollo 11 image (credit to Serendigity - https://www.flickr.com/photos/68686051@N00/48269069057)
