@@ -7,7 +7,7 @@ import {
     NativeModules,
 } from 'react-360';
 
-const {Browser} = NativeModules;
+const {Data} = NativeModules;
 
 export default class Links extends React.Component {
     constructor(props) {
@@ -17,7 +17,7 @@ export default class Links extends React.Component {
         links: []
     }
     componentDidMount = () => {
-        Browser.get()
+        Data.get()
             .then(data => {
                 this.setState(() => ({
                     links: data.links,

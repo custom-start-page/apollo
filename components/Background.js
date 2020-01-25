@@ -4,9 +4,9 @@ import {
   NativeModules,
 } from 'react-360';
 
-const {Browser} = NativeModules;
+const {Data} = NativeModules;
 
-Browser.get()
+Data.get()
     .then(data => {
         console.log(data);
 

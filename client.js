@@ -3,14 +3,14 @@
 
 import { ReactInstance, Surface } from 'react-360-web';
 
-import BrowserModule from './components/BrowserModule';
+import DataModule from './components/DataModule';
 
 function init(bundle, parent, options = {}) {
     r360 = new ReactInstance(bundle, parent, {
         // Add custom options here
         fullScreen: true,
         nativeModules: [
-            ctx => new BrowserModule(ctx),
+            ctx => new DataModule(ctx),
         ],
         ...options,
     });
