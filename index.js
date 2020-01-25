@@ -1,5 +1,5 @@
 import {
-  AppRegistry,
+    AppRegistry,
 } from 'react-360';
 
 import Links from './components/Links';

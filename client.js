@@ -3,20 +3,25 @@
 
 import { ReactInstance, Surface } from 'react-360-web';
 
+import BrowserModule from './components/BrowserModule';
+
 function init(bundle, parent, options = {}) {
-  r360 = new ReactInstance(bundle, parent, {
-    // Add custom options here
-    fullScreen: true,
-    ...options,
-  });
+    r360 = new ReactInstance(bundle, parent, {
+        // Add custom options here
+        fullScreen: true,
+        nativeModules: [
+            ctx => new BrowserModule(ctx),
+        ],
+        ...options,
+    });
 
-  // Max 4680
-  const container = new Surface(4680, 200, Surface.SurfaceShape.Cylinder);
+    // Max 4680
+    const container = new Surface(4680, 200, Surface.SurfaceShape.Cylinder);
 
-  r360.renderToSurface(
-    r360.createRoot('Links', { /* initial props */ }),
-    container
-  );
+    r360.renderToSurface(
+        r360.createRoot('Links', { /* initial props */ }),
+        container
+    );
 }
 
 window.React360 = {init};
