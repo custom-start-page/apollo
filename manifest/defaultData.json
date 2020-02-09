@@ -1,0 +1,25 @@
+{
+  "links": [
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "name": "Netflix",
+      "url": "https://www.netflix.com/browse"
+    },
+    {
+      "name": "Spotify",
+      "url": "https://open.spotify.com"
+    },
+    {
+      "name": "Feedly",
+      "url": "https://feedly.com/i/latest"
+    },
+    {
+      "name": "Toggl",
+      "url": "https://www.toggl.com/app/timer"
+    }
+  ],
+  "backgroundImage": "static_assets/apollo.jpg"
+}

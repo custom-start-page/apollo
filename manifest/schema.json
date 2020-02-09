@@ -1,0 +1,37 @@
+{
+  "required": [
+    "backgroundImage"
+  ],
+  "properties": {
+    "backgroundImage": {
+      "type": "string",
+      "title": "Background Image",
+      "description": "Link to the image you want displayed in the background. The background image should be an \"equirectangular image\". The Apollo image was found here: http://photopin.com/free-photos/equirectangular."
+    },
+    "links": {
+      "type": "array",
+      "title": "Links",
+      "description": "Create links in groups",
+      "items": {
+        "type": "object",
+        "title": "Link",
+        "required": [
+          "name",
+          "url"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": "Name of the website you're linking to"
+          },
+          "url": {
+            "type": "string",
+            "title": "URL",
+            "description": "Link with 'http://' to the website"
+          }
+        }
+      }
+    }
+  }
+}

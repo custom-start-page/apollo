@@ -1,0 +1,14 @@
+{
+    "name": "Apollo",
+    "slug": "apollo",
+    "author": {
+        "name": "Harvzor",
+        "link": "https://github.com/Harvzor/apollo-start"
+    },
+    "preview": "preview.jpg",
+    "features": [
+        "background",
+        "links",
+        "3d"
+    ]
+}

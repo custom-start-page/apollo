@@ -8,12 +8,16 @@
   <body>
     <!-- Attachment point for your app -->
     <div id="container"></div>
-    <script src="./static_assets/Data.js"></script>
-    <script src="./client.bundle?platform=vr"></script>
+    <!-- <script src="./static_assets/Data.js"></script> -->
+    <script src="/js/shared/storage.min.js"></script>
+    <script>
+        window.Data = new CustomStartStorage();
+    </script>
+    <script src="./client.bundle.js"></script>
     <script>
       // Initialize the React 360 application
       React360.init(
-        'index.bundle?platform=vr&dev=true',
+        'index.bundle.js',
         document.getElementById('container'),
         {
           assetRoot: 'static_assets/',
